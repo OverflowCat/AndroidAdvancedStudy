@@ -32,7 +32,7 @@ import java.util.Random;
  * @author 胡文勇
  * @email wenyong.hu@139.com
  * @createTime 2018/5/25
- * @describe 客户端的类, 用来获取服务端的的书名等
+ * @describe 客户端的类, 用来展示服务端信息
  */
 public class BookManagerActivity extends AppCompatActivity {
     private static final String TAG = "BookManagerActivity";
@@ -48,9 +48,7 @@ public class BookManagerActivity extends AppCompatActivity {
     private ServiceConnection mConnection = new ServiceConnection() {
         // 服务连接后
         @Override
-        /**
-         * 服务连接以后执行此方法
-         */
+        //服务连接以后执行此方法
         public void onServiceConnected(ComponentName name, IBinder service) {
             // 通过aidl中的方法，把Binder转化为AIDL本身
             IBookManager bookManager = IBookManager.Stub.asInterface(service);
@@ -104,6 +102,11 @@ public class BookManagerActivity extends AppCompatActivity {
 
     }
 
+    private void bindService() {
+        Intent intent = new Intent(this, BookManagerService.class);
+        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
+    }
+
     private void findViewById() {
         bookListContent = (TextView) findViewById(R.id.bookList);
         inputText = (EditText) findViewById(R.id.inputText);
@@ -128,11 +131,6 @@ public class BookManagerActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-
-    private void bindService() {
-        Intent intent = new Intent(this, BookManagerService.class);
-        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
     }
 
     @Override

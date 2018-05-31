@@ -20,24 +20,19 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @author 胡文勇
  * @email wenyong.hu@139.com
  * @createTime 2018/5/25
- * @describe
+ * @describe 服务端代码
  */
 public class BookManagerService extends Service {
     private static final String TAG = "BMS";
-    /**
-     * 使用这个list的原因是他可以进行自动的线程同步，类似的还有ConcurrentHashMap
-     */
+    // 使用这个list的原因是他可以进行自动的线程同步，类似的还有ConcurrentHashMap
     private CopyOnWriteArrayList<Book> mBookList = new CopyOnWriteArrayList<>();
+    //系统专门提供的，用于删除跨进程listener的接口。支持任意的AIDL接口。
     private RemoteCallbackList<IOnNewBookArrivedListener> mListenerList = new RemoteCallbackList<>();
     private AtomicBoolean isServiceDestoryed = new AtomicBoolean(false);
 
     public void onCreate() {
         super.onCreate();
         Log.d(TAG, "service_onCreate()");
-        //添加两本图书信息
-        mBookList.add(new Book(1, "Android"));
-        mBookList.add(new Book(2, "Ios"));
-//        new Thread(new ServiceWorker()).start();
     }
 
     public IBinder onBind(Intent intent) {
@@ -64,28 +59,6 @@ public class BookManagerService extends Service {
         // 这个要和beginBroadcast配对使用，就算仅仅是获取个数
         mListenerList.finishBroadcast();
     }
-//
-//    private class ServiceWorker implements Runnable {
-//        @Override
-//        public void run() {
-//            while (!isServiceDestoryed.get()) {
-//                try {
-//                    // 线程睡眠，模拟耗时操作
-//                    Thread.sleep(5000);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//                int bookId = mBookList.size() + 1;
-//                Book newBook = new Book(bookId, "new book#" + bookId);
-//                try {
-//                    // 通过AIDL发送消息到客户端
-//                    onNewBookArrived(newBook);
-//                } catch (RemoteException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
-//    }
 
     private Binder mBinder = new IBookManager.Stub() {
 
@@ -98,7 +71,6 @@ public class BookManagerService extends Service {
         @Override
         public void addBook(Book book) throws RemoteException {
             Log.d(TAG, "service_onCreate()");
-//            mBookList.add(book);
             onNewBookArrived(book);
         }
 
@@ -107,13 +79,9 @@ public class BookManagerService extends Service {
             mListenerList.register(listener);
         }
 
-        ;
-
         @Override
         public void unregisterListener(IOnNewBookArrivedListener listener) throws RemoteException {
             mListenerList.unregister(listener);
         }
-
-        ;
     };
 }

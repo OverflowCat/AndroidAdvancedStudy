@@ -1,6 +1,5 @@
-// Book.com.wscq.aidltest.aidl
+// 文件名是：Book.aidl
 package com.wscq.aidltest.aidl;
 
-// Declare any non-default types here with import statements
-//aidl用到了自定义的类,实现了序列化接口时候,
+//aidl中用到了实现了序列化的类Book，所以这里需要申明一下
 parcelable Book;
