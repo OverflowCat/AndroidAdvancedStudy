@@ -24,11 +24,13 @@ public class Book implements Parcelable {
     }
 
     @Override
+    //序列化时调用
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(this.bookId);
         dest.writeString(this.bookName);
     }
 
+    //根据Parcel重新生成Book类
     protected Book(Parcel in) {
         this.bookId = in.readInt();
         this.bookName = in.readString();
@@ -36,6 +38,7 @@ public class Book implements Parcelable {
 
     public static final Creator<Book> CREATOR = new Creator<Book>() {
         @Override
+        //反序列化时候调用
         public Book createFromParcel(Parcel source) {
             return new Book(source);
         }
