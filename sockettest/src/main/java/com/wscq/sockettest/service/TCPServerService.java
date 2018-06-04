@@ -59,62 +59,62 @@ public class TCPServerService extends Service {
 
         @Override
         public void run() {
-ServerSocket serverSocket = null;
-try {
-    //建立一个端口为8688的服务
-    serverSocket = new ServerSocket(8688);
-} catch (IOException e) {
-    Log.e(TAG, "establish tcp server failed,port:8688");
-    e.printStackTrace();
-    return;
-}
+            ServerSocket serverSocket = null;
+            try {
+                //建立一个端口为8688的服务
+                serverSocket = new ServerSocket(8688);
+            } catch (IOException e) {
+                Log.e(TAG, "establish tcp server failed,port:8688");
+                e.printStackTrace();
+                return;
+            }
 
-while (!isServiceDestoryed) {
-    try {
-        //连接客户端Socket
-        final Socket client = serverSocket.accept();
-        Log.d(TAG, "accept");
-        new Thread() {
-            public void run() {
+            while (!isServiceDestoryed) {
                 try {
-                    //回复客户端
-                    responseClient(client);
+                    //连接客户端Socket
+                    final Socket client = serverSocket.accept();
+                    Log.d(TAG, "accept");
+                    new Thread() {
+                        public void run() {
+                            try {
+                                //回复客户端
+                                responseClient(client);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }.start();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-        }.start();
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
-}
-}
+        }
     }
 
     private void responseClient(Socket client) throws IOException {
-//获取客户端输入流
-BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-//连接客户端输出流
-PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(client.getOutputStream())), true);
-out.print("欢迎来聊天室");
-//如果没有断开连接
-while (!isServiceDestoryed) {
-    //读取下一行
-    String str = in.readLine();
-    Log.d(TAG, "msg from client:" + str);
-    if (str == null) {
-        break;
-    }
-    //随机获取一个回复的短语
-    int i = new Random().nextInt(definedMessages.length);
-    String msg = definedMessages[i];
-    //在客户端输出
-    out.println(msg);
-    Log.d(TAG, "send:" + msg);
-}
-Log.d(TAG, "client quit");
-MyUtils.close(out);
-MyUtils.close(in);
-client.close();
+        //获取客户端输入流
+        BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+        //连接客户端输出流
+        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(client.getOutputStream())), true);
+        out.print("欢迎来聊天室");
+        //如果没有断开连接
+        while (!isServiceDestoryed) {
+            //读取下一行
+            String str = in.readLine();
+            Log.d(TAG, "msg from client:" + str);
+            if (str == null) {
+                break;
+            }
+            //随机获取一个回复的短语
+            int i = new Random().nextInt(definedMessages.length);
+            String msg = definedMessages[i];
+            //在客户端输出
+            out.println(msg);
+            Log.d(TAG, "send:" + msg);
+        }
+        Log.d(TAG, "client quit");
+        MyUtils.close(out);
+        MyUtils.close(in);
+        client.close();
     }
 }
