@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.wscq.commonlyviewtest.activity.TestTextViewActivity;
+import com.wscq.commonlyviewtest.activity.designview.DesignViewActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -18,13 +19,14 @@ public class MainActivity extends BaseActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.text_view_test, R.id.constraint_layout_test})
+    @OnClick({R.id.text_view_test, R.id.designView})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.text_view_test:
                 startActivity(new Intent(this, TestTextViewActivity.class));
                 break;
-            case R.id.constraint_layout_test:
+            case R.id.designView:
+                startActivity(new Intent(this, DesignViewActivity.class));
                 break;
         }
     }

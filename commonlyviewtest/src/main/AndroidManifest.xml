@@ -17,6 +17,16 @@
         </activity>
         <activity android:name=".BaseActivity" />
         <activity android:name=".activity.TestTextViewActivity" />
+        <activity android:name=".activity.designview.DesignViewActivity" />
+        <activity android:name=".activity.designview.TextInputLayoutActivity" />
+        <activity android:name=".activity.designview.TabLayoutActivity" />
+        <activity android:name=".activity.designview.NavigationViewActivity" />
+        <activity android:name=".activity.designview.FloatingActionButtonActivity" />
+        <activity android:name=".activity.designview.CoordinatorLayoutActivity" />
+        <activity
+            android:name=".activity.designview.CollapsingToolbarLayoutActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.designview.BottomSheetBehaviorActivity" />
     </application>
 
 </manifest>
