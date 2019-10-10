@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- UI全局规范尺寸 -->
+
+    <!-- 全局状态栏、Tab栏、导航栏高度 -->
+    <dimen name="global_bar_height">69.975dp</dimen>
+
+    <!-- 主要按钮的高度，如确认按钮 -->
+    <dimen name="primary_button_height">43.5dp</dimen>
+
+    <!-- 主要按钮的水平padding -->
+    <dimen name="primary_button_padding_horizontal">22.5dp</dimen>
+
+    <!-- 较大按钮的高度，如登录按钮 -->
+    <dimen name="large_button_height">63dp</dimen>
+
+    <!-- 较大按钮的宽度，如登录按钮 -->
+    <dimen name="large_button_width">495dp</dimen>
+
+    <!-- 按钮通用圆角大小 -->
+    <dimen name="global_button_corner_radius">7.5dp</dimen>
+
+    <!-- 全局的水平边距 -->
+    <dimen name="global_margin_horizontal">37.5dp</dimen>
+
+    <!-- 全局的模块间距 -->
+    <dimen name="global_margin_model">22.5dp</dimen>
+
+    <!-- 全局的分割线宽度 -->
+    <dimen name="global_divider_width">1.5dp</dimen>
+
+    <!-- 全局的文本内容间距 -->
+    <dimen name="global_text_margin_horizontal">7.5dp</dimen>
+
+    <!-- 网络错误页图片上间距 -->
+    <dimen name="error_view_margin_top">66dp</dimen>
+
+    <!-- 网络错误页图片大小 -->
+    <dimen name="error_view_image_width">216dp</dimen>
+
+    <!-- 字体 -->
+    <dimen name="t1">27sp</dimen>
+    <dimen name="t2">25.995sp</dimen>
+    <dimen name="t3">24sp</dimen>
+    <dimen name="t4">22.5sp</dimen>
+    <dimen name="t5">21sp</dimen>
+    <dimen name="t6">19.5sp</dimen>
+    <dimen name="t7">18sp</dimen>
+    <dimen name="t8">16.5sp</dimen>
+    <dimen name="t9">15sp</dimen>
+    <dimen name="t10">13.5sp</dimen>
+
+    <!-- 具体页面相关尺寸 -->
+
+    <!-- 首页底部Tab图标大小 -->
+    <dimen name="home_tab_icon_size">17.25dp</dimen>
+
+    <!-- 工具栏标题文字大小 -->
+    <dimen name="toolbar_title_text_size">@dimen/t1</dimen>
+    <!-- 工具栏标题文字最大宽度 -->
+    <dimen name="toolbar_title_text_max_width">375dp</dimen>
+    <!-- 工具栏按钮右侧间距 -->
+    <dimen name="toolbar_button_right_margin">22.5dp</dimen>
+    <!-- 工具栏文字按钮文字大小 -->
+    <dimen name="toolbar_button_text_size">@dimen/t3</dimen>
+    <!-- 工具栏文字按钮最大宽度 -->
+    <dimen name="toolbar_button_text_max_width">150dp</dimen>
+    <!-- 工具栏图片按钮左右padding（等于按钮间距的2/1） -->
+    <dimen name="toolbar_image_button_padding">15dp</dimen>
+    <!-- 工具栏文字按钮左右padding（等于按钮间距的2/1） -->
+    <dimen name="toolbar_text_button_padding">13.5dp</dimen>
+
+    <!-- SwipeRefreshLayout下拉圈下拉距离 -->
+    <dimen name="swipe_refresh_layout_end">120dp</dimen>
+
+
+    <dimen name="entrance_title">120dp</dimen>
+    <dimen name="entrance_image_width">525dp</dimen>
+    <dimen name="entrance_image_height">210dp</dimen>
+    <dimen name="entrance_image_margin_top">37.5dp</dimen>
+
+    <dimen name="n167dp">125.25dp</dimen>
+    <dimen name="n_minus_50dp">-37.5dp</dimen>
+    <dimen name="n_40sp">30sp</dimen>
+    <dimen name="n44sp">33sp</dimen>
+    <dimen name="n70dp">52.5dp</dimen>
+    <dimen name="n14dp">10.5dp</dimen>
+    <dimen name="n152dp">114dp</dimen>
+    <dimen name="n104dp">78dp</dimen>
+    <dimen name="n453dp">339.75dp</dimen>
+    <dimen name="n300dp">225dp</dimen>
+
+    <dimen name="narrow_word_item_height">62dp</dimen>
+
+    <dimen name="login_logo_width">135dp</dimen>
+    <dimen name="login_logo_height">135dp</dimen>
+    <dimen name="login_logo_margin_bottom">50dp</dimen>
+    <dimen name="dimen_logo_margin_top">52.5dp</dimen>
+    <dimen name="login_layout_padding_left">37.5dp</dimen>
+    <dimen name="login_layout_padding_right">37.5dp</dimen>
+    <dimen name="login_phone_width">22.5dp</dimen>
+    <dimen name="login_phone_height">22.5dp</dimen>
+    <dimen name="login_edit_text_height">33dp</dimen>
+    <dimen name="login_edit_margin_left">15dp</dimen>
+    <dimen name="password_margin_top">35.25dp</dimen>
+    <dimen name="login_button_margin_top">60dp</dimen>
+    <dimen name="password_type_padding">3.75dp</dimen>
+    <dimen name="password_margin_left">15dp</dimen>
+    <dimen name="password_margin_right">7.5dp</dimen>
+    <dimen name="enter_login_btn_margin_left">30dp</dimen>
+    <dimen name="login_enter_height">120dp</dimen>
+    <dimen name="import_lexicon_height">30dp</dimen>
+    <dimen name="normal_100dp">75dp</dimen>
+    <dimen name="normal_32sp">24sp</dimen>
+    <dimen name="normal_50dp">37.5dp</dimen>
+    <dimen name="normal_28sp">21sp</dimen>
+    <dimen name="normal_90dp">67.5dp</dimen>
+    <dimen name="normal_25sp">18.75sp</dimen>
+    <dimen name="normal_200dp">150dp</dimen>
+    <dimen name="normal_40dp">30dp</dimen>
+    <dimen name="normal_60dp">45dp</dimen>
+    <dimen name="normal_65dp">49dp</dimen>
+    <dimen name="normal_80dp">60dp</dimen>
+    <dimen name="normal_140dp">105dp</dimen>
+    <dimen name="normal_142dp">106.3dp</dimen>
+    <dimen name="normal_52sp">39sp</dimen>
+    <dimen name="normal_138dp">103.5dp</dimen>
+    <dimen name="normal_57dp">42.75dp</dimen>
+    <dimen name="normal_600dp">450dp</dimen>
+    <dimen name="normal_48dp">36dp</dimen>
+    <dimen name="normal_6dp">4.5dp</dimen>
+    <dimen name="normal_67_5dp">51.1dp</dimen>
+    <dimen name="normal_15dp">11.25dp</dimen>
+    <dimen name="normal_4dp">4dp</dimen>
+    <dimen name="normal_3dp">3dp</dimen>
+    <dimen name="normal_126dp">126dp</dimen>
+    <dimen name="normal_42_67dp">32dp</dimen>
+    <dimen name="normal_246_67dp">192.5dp</dimen>
+    <dimen name="normal_446_67dp">335dp</dimen>
+    <dimen name="normal_93_33dp">70dp</dimen>
+    <dimen name="normal_106_67dp">80dp</dimen>
+    <dimen name="normal_37dp">27.75dp</dimen>
+    <dimen name="normal_55dp">41.25dp</dimen>
+    <dimen name="normal_34sp">25.5sp</dimen>
+    <dimen name="normal_620dp">465dp</dimen>
+    <dimen name="normal_160dp">120dp</dimen>
+    <dimen name="normal_30dp">22.5dp</dimen>
+    <dimen name="normal_10dp">7.5dp</dimen>
+    <dimen name="normal_subtraction_5dp">-3.75dp</dimen>
+    <dimen name="normal_66_67dp">50dp</dimen>
+    <dimen name="normal_33_33dp">25dp</dimen>
+    <dimen name="normal_20dp">15dp</dimen>
+    <dimen name="normal_133dp">99.75dp</dimen>
+    <dimen name="normal_13dp">9.75dp</dimen>
+    <dimen name="normal_5dp">3.75dp</dimen>
+    <dimen name="normal_106dp">79.5dp</dimen>
+    <dimen name="normal_35dp">26.25dp</dimen>
+    <dimen name="normal_230dp">172.5dp</dimen>
+    <dimen name="normal_36dp">27dp</dimen>
+    <dimen name="normal_8dp">6dp</dimen>
+    <dimen name="normal_28dp">21dp</dimen>
+    <dimen name="normal_110dp">82.5dp</dimen>
+    <dimen name="normal_400dp">300dp</dimen>
+    <dimen name="normal_182dp">136.5dp</dimen>
+    <dimen name="normal_25dp">18.75dp</dimen>
+    <dimen name="normal_180dp">135dp</dimen>
+    <dimen name="normal_42dp">31.5dp</dimen>
+    <dimen name="normal_45dp">33.75dp</dimen>
+    <dimen name="normal_17dp">12.75dp</dimen>
+    <dimen name="normal_700dp">525dp</dimen>
+    <dimen name="normal_323dp">242.25dp</dimen>
+    <dimen name="normal_12dp">9dp</dimen>
+    <dimen name="normal_150dp">112.5dp</dimen>
+    <dimen name="normal_86_67dp">65dp</dimen>
+    <dimen name="normal_29dp">21.75dp</dimen>
+    <dimen name="normal_38sp">28.5sp</dimen>
+    <dimen name="normal_350dp">262.5dp</dimen>
+    <dimen name="normal_25_33sp">18.9975sp</dimen>
+    <dimen name="normal_14dp">10.5dp</dimen>
+    <dimen name="normal_333dp">249.75dp</dimen>
+    <dimen name="normal_18dp">13.5dp</dimen>
+    <dimen name="normal_40sp">30sp</dimen>
+    <dimen name="normal_353dp">264.75dp</dimen>
+    <dimen name="normal_n_20dp">-15dp</dimen>
+    <dimen name="normal_48sp">36sp</dimen>
+    <dimen name="normal_43dp">32.25dp</dimen>
+    <dimen name="normal_41dp">30.75dp</dimen>
+    <dimen name="normal_16dp">12dp</dimen>
+    <dimen name="normal_306_66dp">230dp</dimen>
+    <dimen name="normal_155_33dp">116.5dp</dimen>
+    <dimen name="normal_118dp">88.5dp</dimen>
+    <dimen name="normal_120dp">90dp</dimen>
+    <dimen name="normal_145_33dp">109dp</dimen>
+    <dimen name="normal_212dp">159dp</dimen>
+    <dimen name="normal_45_33sp">34sp</dimen>
+    <dimen name="normal_467dp">350.25dp</dimen>
+    <dimen name="normal_26dp">19.5dp</dimen>
+    <dimen name="normal_132dp">99dp</dimen>
+    <dimen name="normal_373dp">279.75dp</dimen>
+    <dimen name="normal_187dp">140.25dp</dimen>
+    <dimen name="normal_127dp">95.25dp</dimen>
+
+    <dimen name="about_us_logo_margin_top">45dp</dimen>
+    <dimen name="about_us_version_margin_top">15dp</dimen>
+    <dimen name="about_us_first_text_margin_top">42.75dp</dimen>
+    <dimen name="about_us_second_text_margin_top">27.75dp</dimen>
+    <dimen name="about_us_second_text_line_space">11.9dp</dimen>
+    <dimen name="about_us_copyright_text_size">16sp</dimen>
+    <dimen name="about_us_company_name_margin_top">7.5dp</dimen>
+    <dimen name="about_us_company_name_text_size">12sp</dimen>
+    <dimen name="base_tab_tablayout_height">1.5dp</dimen>
+    <dimen name="vocabulary_guide_image_height">510dp</dimen>
+    <dimen name="vocabulary_guide_device_text_size">10.5sp</dimen>
+    <dimen name="vocabulary_guide_device_margin_right">6dp</dimen>
+    <dimen name="vocabulary_guide_device_margin_left">6dp</dimen>
+    <dimen name="vocabulary_guide_device_margin_top">207dp</dimen>
+    <dimen name="vocabulary_guide_device_margin_start">6dp</dimen>
+    <dimen name="vocabulary_guide_device_margin_end">8dp</dimen>
+    <dimen name="vocabulary_guide_time_line_space">3dp</dimen>
+    <dimen name="vocabulary_guide_time_margin_top">33dp</dimen>
+    <dimen name="vocabulary_guide_time_margin_left">309dp</dimen>
+    <dimen name="vocabulary_guide_time_margin_start">309dp</dimen>
+    <dimen name="vocabulary_guide_count_down_second_text_size">12sp</dimen>
+    <dimen name="vocabulary_guide_count_down_second_margin_left">429dp</dimen>
+    <dimen name="vocabulary_guide_count_down_second_margin_top">144dp</dimen>
+    <dimen name="vocabulary_guide_count_down_second_margin_start">429dp</dimen>
+    <dimen name="vocabulary_guide_test_word_margin_start">160dp</dimen>
+    <dimen name="vocabulary_guide_test_word_margin_left">160dp</dimen>
+    <dimen name="vocabulary_guide_test_tip_margin_top">10.5dp</dimen>
+    <dimen name="vocabulary_guide_test_tip_margin_right">6dp</dimen>
+    <dimen name="vocabulary_guide_test_tip_margin_left">6dp</dimen>
+    <dimen name="vocabulary_guide_test_tip_margin_start">6dp</dimen>
+    <dimen name="vocabulary_guide_test_tip_margin_end">8dp</dimen>
+    <dimen name="vocabulary_guide_test_second_tip_margin_top">2.25dp</dimen>
+    <dimen name="vocabulary_guide_test_second_tip_margin_right">6dp</dimen>
+    <dimen name="vocabulary_guide_test_second_tip_margin_left">6dp</dimen>
+    <dimen name="vocabulary_guide_test_second_tip_margin_start">6dp</dimen>
+    <dimen name="vocabulary_guide_test_second_tip_margin_end">6dp</dimen>
+    <dimen name="vocabulary_guide_start_test_width">300dp</dimen>
+    <dimen name="vocabulary_guide_start_test_height">60dp</dimen>
+    <dimen name="vocabulary_guide_start_test_margin_top">29.25dp</dimen>
+    <dimen name="vocabulary_guide_start_test_result_margin_top">20.25dp</dimen>
+    <dimen name="vocabulary_guide_start_test_result_margin_right">6dp</dimen>
+    <dimen name="vocabulary_guide_start_test_result_margin_end">6dp</dimen>
+    <dimen name="about_us_company_name_margin_bottom">33.33dp</dimen>
+    <dimen name="vocabulary_test_progress_bar_width">45dp</dimen>
+    <dimen name="vocabulary_test_progress_bar_height">45dp</dimen>
+    <dimen name="vocabulary_test_progress_bar_margin_right">52.5dp</dimen>
+    <dimen name="vocabulary_test_progress_bar_margin_top">22.5dp</dimen>
+    <dimen name="vocabulary_test_progress_bar_round_width">1.5dp</dimen>
+    <dimen name="vocabulary_test_progress_bar_margin_end">52.5dp</dimen>
+    <dimen name="vocabulary_test_count_down_time_margin_top">6dp</dimen>
+    <dimen name="vocabulary_test_count_down_time_margin_right">6.75dp</dimen>
+    <dimen name="vocabulary_test_count_down_time_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_count_down_time_margin_bottom">6dp</dimen>
+    <dimen name="vocabulary_test_count_down_time_margin_start">6dp</dimen>
+    <dimen name="vocabulary_test_count_down_time_margin_end">6.75dp</dimen>
+    <dimen name="vocabulary_test_font_text_size">49.5sp</dimen>
+    <dimen name="vocabulary_test_font_text_margin_top">48dp</dimen>
+    <dimen name="vocabulary_test_font_text_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_font_text_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_font_text_margin_start">6dp</dimen>
+    <dimen name="vocabulary_test_font_text_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_tips_margin_top">9dp</dimen>
+    <dimen name="vocabulary_test_constraintlayout_margin_top">84dp</dimen>
+    <dimen name="vocabulary_test_constraintlayout_margin_bottom">6dp</dimen>
+    <dimen name="vocabulary_test_recyclerview_margin_top">7.5dp</dimen>
+    <dimen name="vocabulary_test_textview_width">375dp</dimen>
+    <dimen name="vocabulary_test_textview_height">63dp</dimen>
+    <dimen name="vocabulary_test_textview_margin_top">45dp</dimen>
+    <dimen name="vocabulary_test_textview_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_textview_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_textview_margin_start">6dp</dimen>
+    <dimen name="vocabulary_test_textview_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_report_constraintlayout_padding_bottom">28.5dp</dimen>
+    <dimen name="vocabulary_test_report_back_bt_height">82.5dp</dimen>
+    <dimen name="vocabulary_test_report_back_bt_margin_top">-9.75dp</dimen>
+    <dimen name="vocabulary_test_report_tool_bar_title_height">82.5dp</dimen>
+    <dimen name="vocabulary_test_report_tool_bar_title_margin_top">-6dp</dimen>
+    <dimen name="vocabulary_test_report_tool_bar_title_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_report_tool_bar_title_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_report_tool_bar_title_margin_start">6dp</dimen>
+    <dimen name="vocabulary_test_report_tool_bar_title_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_report_imageview3_margin_left">7.5dp</dimen>
+    <dimen name="vocabulary_test_report_imageview3_margin_start">7.5dp</dimen>
+    <dimen name="vocabulary_test_report_imageview3_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_report_imageview3_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_report_imageview3_margin_top">54dp</dimen>
+    <dimen name="vocabulary_test_report_imageview4_margin_right">81.75dp</dimen>
+    <dimen name="vocabulary_test_report_imageview4_margin_end">7.5dp</dimen>
+    <dimen name="vocabulary_test_report_imageview4_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_report_imageview4_margin_top">54dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggest_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggest_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggest_margin_start">6dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggest_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggest_margin_top">48dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_width">495dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_height">63dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_line_space">1.5dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_margin_start">6dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_report_experience_remember_word_margin_top">49.5dp</dimen>
+    <dimen name="vocabulary_test_report_count_text_size">51sp</dimen>
+    <dimen name="vocabulary_test_report_count_margin_top">9dp</dimen>
+    <dimen name="vocabulary_test_report_first_description_margin_right">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_first_description_margin_left">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_first_description_margin_top">31.5dp</dimen>
+    <dimen name="vocabulary_test_report_first_description_margin_start">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_first_description_margin_end">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_image_margin_right">7.5dp</dimen>
+    <dimen name="vocabulary_test_report_image_margin_end">7.5dp</dimen>
+    <dimen name="vocabulary_test_report_image_margin_top">55.5dp</dimen>
+    <dimen name="vocabulary_test_report_image_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_report_imageview2_margin_left">6dp</dimen>
+    <dimen name="vocabulary_test_report_image2_margin_start">7.5dp</dimen>
+    <dimen name="vocabulary_test_report_image2_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_report_image2_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_report_image2_margin_top">55.5dp</dimen>
+    <dimen name="vocabulary_test_report_ability_title_margin_start">0.75dp</dimen>
+    <dimen name="vocabulary_test_report_ability_title_margin_left">0.75dp</dimen>
+    <dimen name="vocabulary_test_report_ability_title_margin_right">6dp</dimen>
+    <dimen name="vocabulary_test_report_ability_title_margin_end">6dp</dimen>
+    <dimen name="vocabulary_test_report_ability_title_margin_top">49.5dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggestion_margin_left">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggestion_margin_right">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggestion_margin_start">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggestion_margin_end">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_study_suggestion_margin_top">26.25dp</dimen>
+    <dimen name="vocabulary_test_report_count_title_text_size">28.5sp</dimen>
+    <dimen name="vocabulary_test_report_count_title_margin_top">130.5dp</dimen>
+    <dimen name="vocabulary_test_report_english_ablity_line_space">1.5dp</dimen>
+    <dimen name="vocabulary_test_report_english_ablity_margin_left">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_english_ablity_margin_right">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_english_ablity_margin_start">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_english_ablity_margin_end">22.5dp</dimen>
+    <dimen name="vocabulary_test_report_english_ablity_margin_top">27dp</dimen>
+    <dimen name="select_word_tips_layout_content_height">75dp</dimen>
+    <dimen name="select_word_select_word_horn_margin_bottom">6dp</dimen>
+    <dimen name="select_word_select_word_horn_margin_top">6dp</dimen>
+    <dimen name="select_word_select_word_horn_margin_left">24dp</dimen>
+    <dimen name="select_word_select_word_horn_margin_start">24dp</dimen>
+    <dimen name="select_word_select_word_tips_tv_margin_bottom">6dp</dimen>
+    <dimen name="select_word_select_word_tips_tv_margin_top">6dp</dimen>
+    <dimen name="select_word_select_word_tips_tv_margin_left">69dp</dimen>
+    <dimen name="select_word_select_word_tips_tv_margin_start">69dp</dimen>
+    <dimen name="select_word_constraintlayout_height">90dp</dimen>
+    <dimen name="select_word_create_word_list_height">63dp</dimen>
+    <dimen name="select_word_create_word_list_width">490dp</dimen>
+    <dimen name="select_word_create_word_margin_bottom">6dp</dimen>
+    <dimen name="select_word_create_word_margin_right">6dp</dimen>
+    <dimen name="select_word_create_word_margin_top">6dp</dimen>
+    <dimen name="select_word_create_word_margin_end">6dp</dimen>
+    <dimen name="select_word_select_word_rv_margin_bottom">90dp</dimen>
+    <dimen name="select_word_select_word_rv_margin_top">75dp</dimen>
+    <dimen name="welcome_splash_logo_margin_right">6dp</dimen>
+    <dimen name="welcome_splash_logo_margin_left">6dp</dimen>
+    <dimen name="welcome_splash_logo_margin_top">200.25dp</dimen>
+</resources>

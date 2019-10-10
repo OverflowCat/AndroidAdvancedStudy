@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rect_c1_1_10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/progress_title"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textColor="@color/h1_2"
+        android:textSize="@dimen/t5" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25.5dp">
+
+        <com.hqyxjy.core.widget.ArcProgressBar
+            android:id="@+id/arc_progress_bar"
+            android:layout_width="103.5dp"
+            android:layout_height="103.5dp"
+            android:background="@drawable/shape_ring_c4_1_49dp"
+            app:progress_angle_end="270"
+            app:progress_angle_start="-90"
+            app:progress_background="#eceff1"
+            app:progress_color="@color/b1_1"
+            app:progress_radius="48.75dp"
+            app:progress_ratio="0"
+            app:progress_width="3dp" />
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/b1_1"
+            android:textSize="40.5sp" />
+    </FrameLayout>
+</LinearLayout>

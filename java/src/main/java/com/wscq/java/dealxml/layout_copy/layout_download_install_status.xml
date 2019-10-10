@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hqyxjy.core.widget.DownloadProgressView
+        android:id="@+id/progress_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:radius="@dimen/x5"
+        app:textSize="@dimen/t9"
+        app:textColor="@color/c1_1"
+        app:loadingColor="@color/b1_1"
+        app:stopColor="@color/b1_1" />
+    <TextView
+        android:id="@+id/status_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="安装"
+        android:textSize="@dimen/t9"
+        android:textColor="@color/c1_1_60"
+        android:gravity="center"
+        />
+
+</FrameLayout>

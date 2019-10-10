@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="@dimen/x676_5"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+    >
+        <LinearLayout
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/y22_5"
+            android:layout_marginTop="@dimen/y22_5">
+
+            <com.hqyxjy.core.widget.ShapedImageView
+                android:id="@+id/app_icon"
+                android:layout_width="@dimen/x75"
+                android:layout_height="@dimen/y75"
+                app:shape_mode="round_rect"
+                app:round_radius="@dimen/x10"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="@dimen/x125"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x45"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="单词速记"
+                    android:textColor="@color/c1_1"
+                    android:textSize="@dimen/t7" />
+
+                <TextView
+                    android:id="@+id/app_version_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y7"
+                    android:text="V2.0,5.2MB"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/c1_1_60"
+                    android:textSize="@dimen/t9" />
+
+                <TextView
+                    android:id="@+id/app_install_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y4"
+                    android:text="10月25日新版发布"
+                    android:textColor="@color/c1_1_60"
+                    android:textSize="@dimen/t9" />
+            </LinearLayout>
+
+            <com.hqyxjy.core.widget.ExpandableTextView
+                android:id="@+id/app_update_info"
+                android:layout_width="@dimen/x262_5"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/y5"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/c1_1"
+                android:textSize="@dimen/t10"
+                app:etv_EllipsisHint="..."
+                app:etv_EnableToggle="false"
+                app:etv_MaxLinesOnShrink="5"
+                app:etv_ToExpandHint="更多"
+                app:etv_ToExpandHintColor="@color/b1_1"
+                app:etv_ToExpandHintColorBgPressed="@color/transparent"
+                app:etv_ToShrinkHintShow="false" />
+
+            <View
+                android:layout_width="@dimen/x0"
+                android:layout_height="@dimen/y75"
+                android:layout_weight="1">
+            </View>
+            <com.hqyxjy.launcher.widget.DownloadInstallStatusView
+                android:id="@+id/download_install_status_view"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/y30"
+                android:layout_marginTop="@dimen/y22_5"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y0_5"
+            android:background="@color/c1_1_30" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/name_tv"
+    android:background="@color/selector_c4_1_pressesd_c4_4"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    tools:text="确认"
+    tools:ignore = "Deprecated"
+    android:singleLine="true"
+    android:textAlignment="center"
+    android:textColor="@color/b1_1"
+    android:textSize="@dimen/t6" />

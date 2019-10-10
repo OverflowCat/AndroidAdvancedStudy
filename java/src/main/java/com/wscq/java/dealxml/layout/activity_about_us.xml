@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/ic_default_bg">
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="124dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_systemsetting_logo"
+            />
+
+        <TextView
+            android:id="@+id/about_us_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Version:1.0.0"
+            android:textColor="@color/c1_1_30"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="0.5dp"
+        android:layout_height="365dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/left"
+        android:background="@drawable/shape_rect_021d4e_c1_1_021d4e"
+        />
+
+    <LinearLayout
+        android:layout_alignLeft="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c1_1"
+            android:textSize="@dimen/t9"
+            android:lineSpacingExtra = "12.5dp"
+            android:text="环球优学教育成立于2014年，是专注于小、初、高个性化教育的全国直营连锁教育集团，并获得ISO9001质量管理体系认证，现已成功登陆新三板。公司总部设在北京，现已在40多个城市开设了80余所个性化学习中心，专职教职员工2000多名，累积为100000余名家长解决家庭教育以及孩子学习成绩相关问题，所有学员提分率达98.71%。公司核心团队来自海内外知名教育企业和互联网公司，拥有多年中小学教研经验，公司结合移动互联网的大数据分析技术，开发有自主知识产权的个性化教育平台，致力于为2.1亿中小学生提供全生态教育服务。"
+            />
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c1_1"
+            android:textSize="@dimen/t9"
+            android:lineSpacingExtra = "12.5dp"
+            android:text="环球优学优课堂隶属环球优学教育集团旗下，主要针对课程产品进行研发和推广。目前涉及K12全科目课程，包括：数学基础学习力、英语脱口出、单词速记、语文写作、理科文综快学通等各类学习产品30余个。优课堂致力于让孩子的学习更简单、更美好，帮助孩子更加高效的提分！"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/c1_1_50"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:text="Copyright©2017环球优学（北京）教育咨询有限公司版权所有"
+        />
+
+</RelativeLayout>

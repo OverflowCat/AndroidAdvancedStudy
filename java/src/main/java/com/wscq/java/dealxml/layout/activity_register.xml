@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hqyxjy.launcher.widget.edittext.HQScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        android:background="@drawable/ic_default_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_connection_network_margin_top_57" />
+
+        <include layout="@layout/layout_phone_verification_password_button_and_two_textview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingBottom="15dp"
+            android:text="Copyright©2017 环球优学（北京）教育咨询有限公司版权所有"
+            android:textColor="@color/c1_1_30"
+            android:textSize="12sp" />
+    </LinearLayout>
+</com.hqyxjy.launcher.widget.edittext.HQScrollView>

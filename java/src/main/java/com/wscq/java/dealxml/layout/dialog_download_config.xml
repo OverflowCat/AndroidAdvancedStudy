@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rect_c1_1_10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/progress_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="应用下载设置"
+        android:textColor="@color/h1_2"
+        android:textSize="@dimen/t5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/download_config_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_download_use_wifi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="15dp"
+                android:text="仅在wifi环境下载"
+                android:textColor="@color/h1_6"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/download_config_wifi_checkBox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:button="@drawable/selector_download_wifi"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/download_config_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_download_use_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="15dp"
+                android:text="允许数据流量下载"
+                android:textColor="@color/h1_6"
+                android:textSize="12dp" />
+
+            <CheckBox
+                android:id="@+id/download_config_data_checkBox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:button="@drawable/selector_download_data"
+                android:clickable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

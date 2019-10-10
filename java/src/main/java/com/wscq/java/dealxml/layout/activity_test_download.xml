@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.hqyxjy.launcher.service.packagedownload.example1.TestDownloadActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_0_status_tv"
+                android:text="状态"
+                style="@style/test_download_normal_btn"/>
+
+            <TextView
+                android:id="@+id/task_0_progress_tv"
+                android:text="进度"
+                style="@style/test_download_normal_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_1_status_tv"
+                android:text="状态"
+                style="@style/test_download_normal_btn"/>
+
+            <TextView
+                android:id="@+id/task_1_progress_tv"
+                android:text="进度"
+                style="@style/test_download_normal_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_2_status_tv"
+                android:text="状态"
+                style="@style/test_download_normal_btn"/>
+
+            <TextView
+                android:id="@+id/task_2_progress_tv"
+                android:text="进度"
+                style="@style/test_download_normal_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_3_status_tv"
+                android:text="状态"
+                style="@style/test_download_normal_btn"/>
+
+            <TextView
+                android:id="@+id/task_3_progress_tv"
+                android:text="进度"
+                style="@style/test_download_normal_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_4_status_tv"
+                android:text="状态"
+                style="@style/test_download_normal_btn" />
+
+            <TextView
+                android:id="@+id/task_4_progress_tv"
+                android:text="进度"
+                style="@style/test_download_normal_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/task_5_status_tv"
+                android:text="状态"
+                style="@style/test_download_normal_btn"/>
+
+            <TextView
+                android:id="@+id/task_5_progress_tv"
+                android:text="进度"
+                style="@style/test_download_normal_btn"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/wireless_download_switch_tv"
+            android:text="允许浏量下载"
+            style="@style/test_download_normal_btn"/>
+        <TextView
+            android:id="@+id/wifi_switch_tv"
+            android:text="WIFI打开"
+            style="@style/test_download_normal_btn" />
+        <TextView
+            android:id="@+id/wireless_switch_tv"
+            android:text="流量打开"
+            style="@style/test_download_normal_btn" />
+    </LinearLayout>
+</LinearLayout>

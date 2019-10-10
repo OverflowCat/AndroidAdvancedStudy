@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hqyxjy.launcher.widget.edittext.HQScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hqyxjy.launcher.activity.account.SetPasswordActivity">
+
+    <LinearLayout
+        android:id="@+id/set_password_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_default_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/x0"
+            android:layout_height="@dimen/y0"
+            android:layout_weight="220" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你还没有登录密码，请先设置密码"
+            android:textColor="@color/b1_3"
+            android:textSize="@dimen/t7" />
+
+        <View
+            android:id="@+id/when_keyboard_show_flag"
+            android:layout_width="@dimen/x0"
+            android:layout_height="@dimen/y0"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginTop="@dimen/y40" />
+
+        <LinearLayout
+            android:id="@+id/set_password_edit_content_layout"
+            android:layout_width="@dimen/x329"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/x22_5"
+                    android:layout_height="@dimen/y22_5"
+                    android:src="@drawable/ic_lock"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <com.hqyxjy.launcher.widget.edittext.HQEditText
+                    android:id="@+id/password_et"
+                    style="@style/login_edit_text_style"
+                    android:layout_width="@dimen/x0"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x9"
+                    android:layout_marginRight="@dimen/x7"
+                    android:layout_weight="1"
+                    android:hint="密码为6-16位数字/字母/符号"
+                    android:inputType="textPassword"
+                    app:clean_able="true"
+                    app:scrollToWhenKeyboard="@id/when_keyboard_show_flag" />
+
+                <CheckBox
+                    android:id="@+id/password_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_ic_show_password"
+                    android:padding="@dimen/x5" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/password_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_divider_width"
+                android:layout_marginLeft="@dimen/x22_5"
+                android:background="@color/selector_c1_1_disable_c1_1_30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/accountMainLogoutBtn"
+            style="@style/btn_rect_b1_1_pressed_b1_3_disable_b1_2_global"
+            android:layout_width="@dimen/x347_5"
+            android:layout_marginTop="@dimen/y30"
+            android:text="完成" />
+
+        <View
+            android:layout_width="@dimen/x0"
+            android:layout_height="@dimen/y0"
+            android:layout_weight="383" />
+
+    </LinearLayout>
+
+</com.hqyxjy.launcher.widget.edittext.HQScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect_c1_1_10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_adjust_system_time_warning"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备系统时间不正确"
+                    android:textColor="@color/h1_2"
+                    android:textSize="@dimen/t5" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/dialog_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:lineSpacingExtra="4dp"
+                android:text="为保证正常学习，请到系统设置中将日期和时间修改为与标准时间一致。"
+                android:textColor="@color/h1_3"
+                android:textSize="@dimen/t8" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设备系统时间: "
+                    android:textColor="@color/h1_6"
+                    android:textSize="@dimen/t10"
+                    />
+                <TextView
+                    android:id="@+id/date_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018年01月19日"
+                    android:textColor="@color/h1_6"
+                    android:textSize="@dimen/t10"
+                    />
+                <TextView
+                    android:id="@+id/time_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="12：32"
+                    android:textColor="@color/r1_1"
+                    android:textSize="@dimen/t10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/h1_9" />
+
+            <TextView
+                android:id="@+id/go_setting_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="去设置"
+                android:textColor="@color/selector_b1_1_pressed_b1_2_disable_b1_3"
+                android:textSize="@dimen/t6" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

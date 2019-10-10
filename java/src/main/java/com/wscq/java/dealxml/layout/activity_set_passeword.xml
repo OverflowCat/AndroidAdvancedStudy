@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hqyxjy.launcher.widget.edittext.HQScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hqyxjy.launcher.activity.account.SetPasswordActivity">
+
+    <LinearLayout
+        android:id="@+id/set_password_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_default_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="220" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你还没有登录密码，请先设置密码"
+            android:textColor="@color/b1_3"
+            android:textSize="@dimen/t7" />
+
+        <View
+            android:id="@+id/when_keyboard_show_flag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp" />
+
+        <LinearLayout
+            android:id="@+id/set_password_edit_content_layout"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="22.5dp"
+                    android:layout_height="22.5dp"
+                    android:src="@drawable/ic_lock"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <com.hqyxjy.launcher.widget.edittext.HQEditText
+                    android:id="@+id/password_et"
+                    style="@style/login_edit_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:hint="密码为6-16位数字/字母/符号"
+                    android:inputType="textPassword"
+                    app:clean_able="true"
+                    app:scrollToWhenKeyboard="@id/when_keyboard_show_flag" />
+
+                <CheckBox
+                    android:id="@+id/password_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_ic_show_password"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/password_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_divider_width"
+                android:layout_marginLeft="22.5dp"
+                android:background="@color/selector_c1_1_disable_c1_1_30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/accountMainLogoutBtn"
+            style="@style/btn_rect_b1_1_pressed_b1_3_disable_b1_2_global"
+            android:layout_width="347.5dp"
+            android:layout_marginTop="30dp"
+            android:text="完成" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="383" />
+
+    </LinearLayout>
+
+</com.hqyxjy.launcher.widget.edittext.HQScrollView>

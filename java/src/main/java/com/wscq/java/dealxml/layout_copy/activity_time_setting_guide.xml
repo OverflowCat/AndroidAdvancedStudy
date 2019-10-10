@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#032049"
+    android:gravity="center_horizontal"
+    >
+    <ImageView
+        android:id="@+id/go_setting_time"
+        android:layout_width="@dimen/x315"
+        android:layout_height="@dimen/y315"
+        android:layout_marginTop="@dimen/y80"
+        android:src="@drawable/selector_time_setting"
+        />
+    <TextView
+        android:id="@+id/skip_setting_time"
+        android:layout_width="@dimen/x90"
+        android:layout_height="@dimen/y40"
+        android:layout_marginTop="@dimen/y50"
+        android:background="@drawable/selector_rect_b1_1_pressed_b1_2_20dp"
+        android:gravity="center"
+        android:text="跳过"
+        android:textSize="@dimen/t7"
+        android:textColor="@color/selector_b1_1_pressed_b1_2_disable_c1_1_30"
+        />
+
+</LinearLayout>

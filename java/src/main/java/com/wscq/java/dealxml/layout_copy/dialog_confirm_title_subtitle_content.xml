@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Deprecated">
+
+    <FrameLayout
+        android:layout_width="@dimen/x365"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x27"
+                    android:paddingRight="@dimen/x27"
+                    android:paddingTop="@dimen/y20_5"
+                    android:singleLine="true"
+                    android:textColor="@color/h1_2"
+                    android:textSize="@dimen/t5"
+                    tools:text="title" />
+
+                <TextView
+                    android:id="@+id/subtitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x27"
+                    android:paddingRight="@dimen/x27"
+                    android:paddingTop="@dimen/y11"
+                    android:singleLine="true"
+                    android:textColor="@color/h1_6"
+                    android:textSize="@dimen/t10"
+                    tools:text="title" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="false"
+                    android:lineSpacingExtra="@dimen/x3"
+                    android:maxLines="4"
+                    android:paddingBottom="@dimen/y23"
+                    android:paddingLeft="@dimen/x25"
+                    android:paddingRight="@dimen/x25"
+                    android:paddingTop="@dimen/y19"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/h1_3"
+                    android:textSize="@dimen/t8"
+                    tools:text="contentc\nontentcontentc\nont\nentco\nntentcontentcontentcontesntcontent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grade_setting_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="@dimen/x615"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect_c4_1_10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y25"
+            android:layout_marginTop="@dimen/y25"
+            android:gravity="center"
+            android:text="请选择年级"
+            android:textColor="@color/h1_2"
+            android:textSize="@dimen/t7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y0"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y14_5"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="小学"
+                android:textColor="@color/h1_6"
+                android:textSize="@dimen/t8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity=""
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_grade_1"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="一年级"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+
+                <RadioButton
+                    android:id="@+id/rb_grade_2"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="二年级"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+
+                <RadioButton
+                    android:id="@+id/rb_grade_3"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="三年级"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+                <RadioButton
+                    android:id="@+id/rb_grade_4"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="四年级"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+
+                <RadioButton
+                    android:id="@+id/rb_grade_5"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="五年级"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+
+                <RadioButton
+                    android:id="@+id/rb_grade_6"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="六年级"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y14_5"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y25"
+                android:text="初中"
+                android:textColor="@color/h1_6"
+                android:textSize="@dimen/t8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_grade_junior_1"
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/y40"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginRight="@dimen/x15"
+                        android:background="@drawable/selector_h1_8_stroke_b1_1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="初一"
+                        android:textColor="@color/selector_h1_3_c4_1"
+                        android:textSize="@dimen/t8" />
+
+                    <RadioButton
+                        android:id="@+id/rb_grade_junior_2"
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/y40"
+                        android:layout_marginRight="@dimen/x15"
+                        android:background="@drawable/selector_h1_8_stroke_b1_1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="初二"
+                        android:textColor="@color/selector_h1_3_c4_1"
+                        android:textSize="@dimen/t8" />
+
+                    <RadioButton
+                        android:id="@+id/rb_grade_junior_3"
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/y40"
+                        android:background="@drawable/selector_h1_8_stroke_b1_1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="初三"
+                        android:textColor="@color/selector_h1_3_c4_1"
+                        android:textSize="@dimen/t8" />
+                    <RadioButton
+                        android:id="@+id/rb_grade_junior_4"
+                        android:layout_width="@dimen/x80"
+                        android:layout_height="@dimen/y40"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:background="@drawable/selector_h1_8_stroke_b1_1"
+                        android:button="@null"
+                        android:text="初四"
+                        android:gravity="center"
+                        android:textColor="@color/selector_h1_3_c4_1"
+                        android:textSize="@dimen/t8" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y14_5"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y25"
+                android:text="高中"
+                android:textColor="@color/h1_6"
+                android:textSize="@dimen/t8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/y25"
+                android:background="@null"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_high_grade_1"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高一"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+
+                <RadioButton
+                    android:id="@+id/rb_high_grade_2"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高二"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+
+                <RadioButton
+                    android:id="@+id/rb_high_grade_3"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/selector_h1_8_stroke_b1_1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="高三"
+                    android:textColor="@color/selector_h1_3_c4_1"
+                    android:textSize="@dimen/t8" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

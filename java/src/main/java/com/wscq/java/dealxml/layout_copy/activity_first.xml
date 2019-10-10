@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hqyxjy.launcher.activity.FirstActivity">
+
+    <Switch
+        android:id="@+id/change_default_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:text="设置当前应用为默认Launcher"
+        android:textSize="30sp" />
+
+    <Switch
+        android:id="@+id/change_usb_access"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:text="禁用USB"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/clean_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:text="清空通知栏消息"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/update_white_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:text="更新白名单"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/read_white_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:text="读取白名单"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/check_update"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:text="检测升级" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/get_device_serial_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取设备序列号" />
+
+        <TextView
+            android:id="@+id/device_serial_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:hint="获取到的设备序列号"
+            android:textColor="@color/bgColor_overlay_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/go_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:hint="到登录界面"
+            android:textColor="@color/bgColor_overlay_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/go_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:padding="@dimen/x10"
+            android:hint="到主界面"
+            style="@style/PrimaryButton"
+            android:textColor="@color/bgColor_overlay_black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/go_lock_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y0"
+        android:layout_weight="1"
+        android:text="跳转到设置锁屏密码页面" />
+
+
+    <TextView
+        android:id="@+id/go_to_systemsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统设置"/>
+
+</LinearLayout>

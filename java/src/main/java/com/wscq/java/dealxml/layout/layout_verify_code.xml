@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    android:paddingLeft="22.5dp"
+    android:paddingRight="22.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="22.5dp"
+            android:layout_height="22.5dp"
+            android:src="@drawable/ic_validation" />
+
+        <com.hqyxjy.launcher.widget.edittext.HQEditText
+            android:id="@+id/verify_code_edit_text"
+            style="@style/login_edit_text_style"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_weight="1"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLines="1"
+            app:clean_able="true" />
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="22.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/c1_1_30" />
+
+        <TextView
+            android:id="@+id/get_verify_code_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/selector_b1_1_pressed_b1_2_disable_c1_1_30"
+            android:textSize="@dimen/t9" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/verify_code_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/global_divider_width"
+        android:layout_marginLeft="22.5dp"
+        android:background="@color/c1_1_30" />
+</LinearLayout>

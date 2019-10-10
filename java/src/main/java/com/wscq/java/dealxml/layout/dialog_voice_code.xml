@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect_c1_1_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="语音验证码"
+                android:textColor="@color/h1_2"
+                android:textSize="@dimen/t5" />
+
+            <TextView
+                android:id="@+id/dialog_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:lineSpacingExtra="4dp"
+                android:text="没有收到短信验证码？我们将以电话形式告诉您验证码，您可能会接到010、xxx、xxx、xxx等开头的电话，请注意接听。"
+                android:textColor="@color/h1_3"
+                android:textSize="@dimen/t8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/h1_9" />
+
+            <TextView
+                android:id="@+id/bottom_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="获取语音验证码"
+                android:textColor="@color/selector_b1_1_pressed_b1_2_disable_b1_3"
+                android:textSize="@dimen/t6" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="15dp"
+            android:src="@drawable/ic_dialog_close_gray" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hqyxjy.launcher.widget.edittext.HQScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    >
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_default_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y80" />
+
+        <LinearLayout
+            android:id="@+id/setting_network_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wifi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:text="Pad还未连网，请先连接网络"
+                android:textColor="#b4bdcc"
+                android:textSize="@dimen/t10" />
+
+            <TextView
+                android:id="@+id/setting_network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x6"
+                android:text="去连接> >"
+                android:textColor="@color/b1_1"
+                android:textSize="@dimen/t10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/x348"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y35"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/name_image_view"
+                    android:layout_width="@dimen/x22"
+                    android:layout_height="@dimen/y22"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/ic_edit_profile_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:gravity="bottom"
+                    android:text="姓名"
+                    android:textColor="@color/c1_1"
+                    android:textSize="@dimen/t8" />
+
+                <com.hqyxjy.launcher.widget.edittext.HQEditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y0"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="必填"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textColor="@color/c1_1"
+                    android:textColorHint="@color/c1_1_30"
+                    android:textSize="@dimen/t8"
+                    app:clean_able="true" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/user_name_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_divider_width"
+                android:layout_marginLeft="@dimen/x32"
+                android:background="@color/c1_1_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y52"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/x22"
+                    android:layout_height="@dimen/y22"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:src="@drawable/ic_edit_profile_sex" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="bottom"
+                    android:text="性别"
+                    android:textColor="@color/c1_1"
+                    android:textSize="@dimen/t8" />
+
+                <RadioGroup
+                    android:id="@+id/sex_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_ic_male"
+                        android:drawablePadding="@dimen/x5"
+                        android:text="男"
+                        android:textColor="@color/selector_c1_1_30_checked_b1_1"
+                        android:textSize="@dimen/t8" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_ic_female"
+                        android:drawablePadding="@dimen/x5"
+                        android:text="女"
+                        android:textColor="@color/selector_c1_1_30_checked_b1_1"
+                        android:textSize="@dimen/t8" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/sex_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_divider_width"
+                android:layout_marginLeft="@dimen/x32"
+                android:background="@color/c1_1_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y52"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x22"
+                    android:layout_height="@dimen/y22"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:src="@drawable/ic_edit_profile_gender" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:gravity="bottom"
+                    android:text="年级"
+                    android:textColor="@color/c1_1"
+                    android:textSize="@dimen/t8" />
+
+                <TextView
+                    android:id="@+id/grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:background="@null"
+                    android:gravity="right|bottom"
+                    android:hint="必填"
+                    android:textColor="@color/c1_1"
+                    android:textColorHint="@color/c1_1_30"
+                    android:textSize="@dimen/t8" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/gradle_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_divider_width"
+                android:layout_marginLeft="@dimen/x32"
+                android:background="@color/c1_1_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y52"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x22"
+                    android:layout_height="@dimen/y22"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:focusable="true"
+                    android:src="@drawable/ic_edit_profile_school" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:gravity="bottom"
+                    android:text="学校"
+                    android:textColor="@color/c1_1"
+                    android:textSize="@dimen/t8" />
+
+                <com.hqyxjy.launcher.widget.edittext.HQEditText
+                    android:id="@+id/school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/y5"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="选填"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColor="@color/c1_1"
+                    android:textColorHint="@color/c1_1_30"
+                    android:textSize="@dimen/t8"
+                    app:clean_able="true"
+                    app:scrollToWhenKeyboard="@id/grade" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/school_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_divider_width"
+                android:layout_marginLeft="@dimen/x32"
+                android:background="@color/c1_1_30" />
+
+            <TextView
+                android:id="@+id/save"
+                style="@style/btn_rect_b1_1_pressed_b1_3_disable_b1_2_global"
+                android:layout_marginLeft="@dimen/x0"
+                android:layout_marginRight="@dimen/x0"
+                android:layout_marginTop="@dimen/y30"
+                android:text="保存" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.hqyxjy.launcher.widget.edittext.HQScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y48"
+        android:paddingLeft="@dimen/global_margin_horizontal"
+        android:paddingRight="@dimen/global_margin_horizontal"
+        android:src="@drawable/selector_ic_toolbar_back" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/system_setting_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/x30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/y15"
+            android:paddingTop="@dimen/y15">
+
+            <ImageView
+                android:layout_width="@dimen/x21"
+                android:layout_height="@dimen/y21"
+                android:layout_marginEnd="@dimen/x0"
+                app:srcCompat="@drawable/ic_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x10"
+                android:text="系统设置"
+                android:textColor="@color/c1_1"
+                android:textSize="@dimen/t9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quit_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/x30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/y15"
+            android:paddingTop="@dimen/y15">
+
+            <ImageView
+                android:layout_width="@dimen/x21"
+                android:layout_height="@dimen/y21"
+                android:layout_marginEnd="@dimen/x0"
+                app:srcCompat="@drawable/ic_quit_system" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x10"
+                android:text="退出"
+                android:textColor="@color/c1_1"
+                android:textSize="@dimen/t9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y60"
+        android:layout_marginTop="@dimen/y60"
+        android:background="#00000000"
+        android:overScrollMode="never" />
+
+    <com.hqyxjy.launcher.widget.indicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/y30"
+        app:ci_height="@dimen/y9"
+        app:ci_margin="@dimen/x7_5"
+        app:ci_width="@dimen/x9" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_launcher">
+
+    <TextView
+        android:id="@+id/try_now"
+        android:layout_width="@dimen/x186"
+        android:layout_height="@dimen/y55_5"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/y123_5"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+</FrameLayout>
