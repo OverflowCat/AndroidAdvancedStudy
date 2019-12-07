@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$/commonlyviewtest" />
             <option value="$PROJECT_DIR$/java" />
             <option value="$PROJECT_DIR$/messengertest" />
+            <option value="$PROJECT_DIR$/okhttpadvanced" />
+            <option value="$PROJECT_DIR$/retrofitadvanced" />
             <option value="$PROJECT_DIR$/sockettest" />
             <option value="$PROJECT_DIR$/toastmanager" />
           </set>

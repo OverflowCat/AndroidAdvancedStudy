@@ -1,1 +1,1 @@
-include ':app', ':algorithm', ':java', ':aidltest', ':messengertest', ':sockettest', ':commonlyviewtest', ':toastmanager'
+include ':app', ':algorithm', ':java', ':aidltest', ':messengertest', ':sockettest', ':commonlyviewtest', ':toastmanager', ':okhttpadvanced', ':retrofitadvanced'
