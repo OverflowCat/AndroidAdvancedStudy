@@ -170,8 +170,7 @@ abstract class HttpServiceMethod<ResponseT, ReturnT> extends ServiceMethod<Retur
       try {
         return KotlinExtensions.awaitResponse(call, continuation);
       } catch (Exception e) {
-//        return KotlinExtensions.suspendAndThrow(e, continuation);
-        return null;
+        return KotlinExtensions.suspendAndThrow(e, continuation);
       }
     }
   }
@@ -207,7 +206,7 @@ abstract class HttpServiceMethod<ResponseT, ReturnT> extends ServiceMethod<Retur
             ? KotlinExtensions.awaitNullable(call, continuation)
             : KotlinExtensions.await(call, continuation);
       } catch (Exception e) {
-        return null;//KotlinExtensions.suspendAndThrow(e, continuation);
+        return KotlinExtensions.suspendAndThrow(e, continuation);
       }
     }
   }

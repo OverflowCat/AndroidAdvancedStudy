@@ -3,7 +3,6 @@ package com.wscq.retrofitadvanced;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.wscq.retrofitadvanced.express.view.ExpressQuestionActivity;
 
@@ -18,12 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        findViewById(R.id.button2).setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this,
-                        ExpressQuestionActivity.class));
-            }
-        });
+                        ExpressQuestionActivity.class)));
     }
 }

@@ -22,6 +22,7 @@ public class ExpressQueryModel implements ExpressQueryContract.Model {
                 .baseUrl("http://www.kuaidi100.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+        //根据接口来创建实现类
         ExpressQuestionService service = retrofit.create(ExpressQuestionService.class);
         Call<ExpressBean> repos = service.queryExpress(expressCode);
         repos.enqueue(callback);
